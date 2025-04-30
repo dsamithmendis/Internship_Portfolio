@@ -1,0 +1,235 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #F5F5F5, #EDEDED); /* Soft gradient */
+    color: #212121; /* Deep Charcoal */
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(120deg, rgba(40, 53, 147, 0.9), rgba(26, 35, 126, 0.9)); /* Glassmorphism effect */
+    color: white;
+    text-align: center;
+    padding: 90px 20px;
+    position: relative;
+    box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin: 0;
+    animation: slideIn 1s ease-out;
+}
+
+.hero-content h1 span {
+    color: #FBC02D; /* Soft Gold highlight */
+}
+
+.hero-content p {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Call-to-Action Button */
+.cta-button {
+    background: #FBC02D; /* Soft Gold */
+    color: #283593; /* Midnight Blue */
+    padding: 12px 24px;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0px 4px 10px rgba(251, 192, 45, 0.3);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #E0A025; /* Darker Gold */
+    transform: scale(1.05);
+    box-shadow: 0px 6px 18px rgba(251, 192, 45, 0.5);
+}
+
+/* Sticky Navigation */
+.sticky-nav {
+    position: sticky;
+    top: 0;
+    background: #FBC02D;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.sticky-nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.sticky-nav ul li a {
+    color: #212121;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.sticky-nav ul li a:hover {
+    background: #E0A025;
+    color: white;
+    border-radius: 8px;
+}
+
+/* Sections */
+.about-section,
+.skills-section,
+.projects-section,
+.contact-section {
+    margin: 40px 0;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.8); /* Glass effect */
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+}
+
+/* Skills Grid */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.skill-card {
+    background: #283593; /* Midnight Blue */
+    color: white;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    font-weight: bold;
+    transition: transform 0.3s ease-in-out;
+}
+
+.skill-card:hover {
+    background: #1A237E; /* Darker Midnight Blue */
+    transform: scale(1.05);
+}
+
+/* Projects Grid */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background: rgba(40, 53, 147, 0.85); /* Transparent Midnight Blue */
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 8px;
+    opacity: 0.9;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.project-card:hover img {
+    opacity: 1;
+}
+
+.project-card:hover {
+    background: #1A237E; /* Darker Midnight Blue */
+    transform: scale(1.05);
+}
+
+/* Contact Form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border: 2px solid #FBC02D; /* Soft Gold */
+    border-radius: 12px;
+    background: #F5F5F5;
+    font-size: 1rem;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    box-shadow: 0px 4px 12px rgba(251, 192, 45, 0.3);
+}
+
+.contact-form button {
+    padding: 12px 24px;
+    background: #283593; /* Midnight Blue */
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.contact-form button:hover {
+    background: #1A237E;
+    transform: scale(1.05);
+}
+
+/* Footer */
+.footer-section {
+    background: #1A237E; /* Darker Midnight Blue */
+    color: white;
+    text-align: center;
+    padding: 25px 0;
+    border-top: 4px solid #FBC02D; /* Soft Gold accent */
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.footer-links {
+    margin-top: 15px;
+}
+
+.footer-links a {
+    color: #FBC02D; /* Soft Gold */
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 0 15px;
+    transition: color 0.3s ease-in-out, text-shadow 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #E0A025; /* Darker Gold */
+    text-shadow: 0px 2px 12px rgba(251, 192, 45, 0.5);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
